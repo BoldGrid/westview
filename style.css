@@ -1,0 +1,132 @@
+/*
+Theme Name: Westview
+Author: The BoldGrid Team
+Theme URI: https://www.boldgrid.com/themes/westview/
+Author URI: https://www.boldgrid.com/the-team/
+Description: Designed specifically for use with the BoldGrid suite of plugins, all BoldGrid themes are highly customizable, responsive to a wide range of devices, and of course, beautiful. Every BoldGrid theme includes five pre-selected color palettes and an advanced tool for creating your own unique palette. In addition, all themes feature multiple menu locations and widget areas, which are easily customizable to suit your needs. So if you're looking for a theme that looks great, feels modern and professional, and offers plenty of features to make it your own, you've chosen well.
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: boldgrid-westview
+Template: prime
+Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-layout, rtl-language-support, translation-ready, boldgrid-theme-51
+*/
+
+/*------------------------------------------------------------------------
+# Base Styles
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Spacing
+-----------------------------------------------*/
+.entry-content {
+	margin: 0;
+}
+
+/*-----------------------------------------------
+## Alignment
+-----------------------------------------------*/
+.site-footer,
+#secondary-menu {
+	text-align: center;
+}
+
+/* Extra small devices (phones, less than 768px) */
+.navbar-default .navbar-nav,
+.navbar-default .navbar-nav .open .dropdown-menu {
+	text-align: center;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.navbar-default .navbar-nav,
+	.navbar-default .navbar-nav .open .dropdown-menu {
+		text-align: left;
+	}
+}
+
+/*------------------------------------------------------------------------
+# Navigation
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Main Menu
+-----------------------------------------------*/
+.navbar {
+	background-color: none;
+	border: none;
+	min-height: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+.navbar-default {
+	background: none;
+	margin: 0;
+}
+
+/* Links */
+.navbar-default .navbar-nav > li > a {
+	padding: 10px;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	background: none;
+}
+#secondary-menu .current_page_item a,
+#tertiary-menu .current_page_item a {
+	background: none;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.navbar-default {
+		float: right;
+		margin: 20px -30px 0 0;
+	}
+}
+
+/*-----------------------------------------------
+## Other Menus
+-----------------------------------------------*/
+#secondary-menu a,
+#tertiary-menu a,
+.menu-social a {
+	padding: 0 5px;
+}
+#secondary-menu,
+#tertiary-menu {
+	background: none;
+}
+.footer-center-items li::after, 
+.boldgrid-framework-menu li::after {
+	content: "";
+}
+
+/*------------------------------------------------------------------------
+# Pages
+------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------
+# Posts
+------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------
+# Plugins
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## WooCommerce
+-----------------------------------------------*/
+
+/*------------------------------------------------------------------------
+# Footer
+------------------------------------------------------------------------*/
+.site-footer {
+	padding: 20px 0;
+}
+.entry-footer {
+	height: 0;
+	margin: -25px 0 0;
+}
