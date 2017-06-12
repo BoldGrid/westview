@@ -1,4 +1,10 @@
 /*------------------------------------------------------------------------
+# Variables
+------------------------------------------------------------------------*/
+$lighten1: lighten($palette-primary_1, 5%);
+$lighten2: lighten($palette-primary_2, 5%);
+
+/*------------------------------------------------------------------------
 # Palettes
 ------------------------------------------------------------------------*/
 .palette-primary {
@@ -20,9 +26,37 @@
 	## Links
 	-----------------------------------------------*/
 	a,
-	a:hover,
-	a:focus {
-		color: $palette-primary_3;
+	.link-primary {
+		color: $palette-primary_1;
+	}
+	.link-secondary {
+		color: $palette-primary_2;
+	}
+	.pager li > a {
+		background-color: $palette-primary_neutral-color;
+		color: $palette-primary_1;
+	}
+
+	/*-----------------------------------------------
+	## Buttons
+	-----------------------------------------------*/
+	.button-primary {
+		background-color: $palette-primary_1;
+		color: $text-contrast-palette-primary_1;
+	}
+	.button-secondary {
+		background-color: $palette-primary_2;
+		color: $text-contrast-palette-primary_2;
+	}
+	.button-primary:hover,
+	.button-primary:focus {
+		background-color: $lighten1;
+		color: $text-contrast-palette-primary_1;
+	}
+	.button-secondary:hover,
+	.button-secondary:focus {
+		background-color: $lighten2;
+		color: $text-contrast-palette-primary_2;
 	}
 
 	/*-----------------------------------------------
@@ -31,100 +65,140 @@
 	hr {
 		border-top: 1px solid $palette-primary_3;
 	}
+	blockquote,
+	.mod-blockquote {
+		border-left: 5px solid $palette-primary_4;
+	}
 
 	/*-----------------------------------------------
 	## Nav
 	-----------------------------------------------*/
-	.navbar-default .navbar-nav > li > a {
-		color: $palette-primary_1;
-	}
+	#primary-navbar a,
 	#secondary-menu a,
 	#tertiary-menu a {
-		color: $palette-primary_5;
+		color: $palette-primary_1;
 	}
-	.navbar-default .navbar-nav > li > a:hover,
-	.navbar-default .navbar-nav > li > a:focus,
-	#secondary-menu a:hover,
-	#secondary-menu a:focus,
-	#tertiary-menu a:hover,
-	#tertiary-menu a:focus,
-	#menu-social-items a:hover,
-	#menu-social-items a:focus,
-	.footer-center-items > a:hover,
-	.footer-center-items > a:focus,
-	.dropdown-menu > li > a {
-		color: $palette-primary_4;
-	}
-	.dropdown-menu {
-		background: $palette-primary_5;
+	#menu-social-items a,
+	#footer-center-menu a {
 		color: $text-contrast-palette-primary_5;
 	}
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-		background: $palette-primary_4;
-		color: $text-contrast-palette-primary_4;
+	#primary-navbar,
+	#secondary-menu,
+	#tertiary-menu,
+	#menu-social-items,
+	#footer-center-menu {
+		.current-menu-item a,
+		a:hover,
+		a:focus {
+			color: $palette-primary_4;
+		}
 	}
-	.navbar-default .navbar-nav > .active > a,
-	.navbar-default .navbar-nav > .active > a:hover,
-	.navbar-default .navbar-nav > .active > a:focus,
-	#secondary-menu .current_page_item a,
-	#tertiary-menu .current_page_item a {
+	#primary-navbar .current-menu-item a {
 		background: none;
-		color: $palette-primary_4;
 	}
+	#primary-navbar .current-menu-parent > a {
+		background: none;
+		color: $palette-primary_1;
+	}
+	.dropdown-menu,
 	.navbar-default .navbar-nav > .open > a,
 	.navbar-default .navbar-nav > .open > a:hover,
 	.navbar-default .navbar-nav > .open > a:focus,
-	.navbar-default .navbar-nav > .current-menu-parent > a,
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-		background: $palette-primary_5;
-		color: $text-contrast-palette-primary_5;
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+		background: $palette-primary_neutral-color;
+		color: $text-contrast-palette-primary-neutral-color;
 	}
 	.navbar-default .navbar-toggle {
-		border-color: $palette-primary_5;
+		background: $palette-primary-neutral-color;
+		border-color: $palette-primary_1;
 	}
-	.navbar-default .navbar-toggle .icon-bar,
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: $text-contrast-palette-primary-neutral-color;
+	}
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus {
+		background: $palette-primary_1;
+	}
 	.navbar-default .navbar-toggle:hover .icon-bar,
 	.navbar-default .navbar-toggle:focus .icon-bar {
-		background-color: $palette-primary_4;
+		background-color: $text-contrast-palette-primary_1;
+	}
+	.has-submenu .sub-arrow:hover,
+	.has-submenu .sub-arrow:focus {
+		color: $text-contrast-palette-primary_1;
 	}
 
 	/*-----------------------------------------------
-	## Content Area
+	## Comments
 	-----------------------------------------------*/
-	.site-content,
-	.widget,
-	.disabled-footer .site-footer {
-		background: $palette-primary_neutral-color;
-		color: $text-contrast-palette-primary_neutral-color;
+	.panel,
+	.panel-body,
+	.panel-footer,
+	.panel-default > .panel-heading {
+		background-color: $palette-primary-neutral-color;
+		color: $text-contrast-palette-primary-neutral-color;
+	}
+	.panel-default > .panel-heading .media-heading {
+		color: $palette-primary_1;
 	}
 
 	/*-----------------------------------------------
-	## Blog
+	## Widgets
 	-----------------------------------------------*/
-	.widget-area {
-		border: 1px solid $text-contrast-palette-primary_1;
-	}
-	.widget .nav > li > a:hover,
-	.widget .nav > li > a:focus,
-	.site-footer .widget {
+	.well {
 		background: $palette-primary_5;
 		color: $text-contrast-palette-primary_5;
 	}
+	.widget.well a {
+		color: $text-contrast-palette-primary_5;
+	}
+	.widget .nav > li > a:hover,
+	.widget .nav > li > a:focus {
+		background: $palette-primary_neutral-color;
+		color: $palette-primary_2;
+	}
+	.widget_calendar .table-striped > tbody > tr:nth-of-type(2n+1) {
+    	background-color: $text-contrast-palette-primary_5;
+    	color: $palette-primary_5;
+	}
+	.widget_calendar #today {
+		color: $palette-primary_2;
+	}
+	#header-widget-area .widget-title,
+	#header-widget-area caption,
 	#footer-widget-area .widget-title,
 	#footer-widget-area caption {
-		color: $palette-primary_4;
+		color: $text-contrast-palette-primary_5;
+	}
+
+	/*-----------------------------------------------
+	## WooCommerce
+	-----------------------------------------------*/
+	#reviews #comments ol.commentlist li .meta {
+		color: $text-contrast-palette-primary-neutral-color;
+	}
+	#reviews #comments ol.commentlist li .comment-text {
+		border: 1px solid $text-contrast-palette-primary-neutral-color;
+	}
+	mark,
+	.mark {
+ 		background: $palette-primary_1;
+ 		color: $text-contrast-palette-primary_1;
 	}
 
 	/*-----------------------------------------------
 	## Footer
 	-----------------------------------------------*/
-	.site-footer,
-	.site-footer a {
+	.site-footer {
 		background: $palette-primary_5;
+		color: $text-contrast-palette-primary_5;
+	}
+	.site-footer a {
 		color: $text-contrast-palette-primary_5;
 	}
 	#boldgrid-sticky-push, 
@@ -133,5 +207,12 @@
 	}
 	.entry-footer a {
 		color: $palette-primary_5;
+	}
+	&.disabled-footer .site-footer {
+		background: $palette-primary-neutral-color;
+		color: $text-contrast-palette-primary-neutral-color;
+	}
+	&.disabled-footer .site-footer a {
+		color: $text-contrast-palette-primary-neutral-color;
 	}
 }

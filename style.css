@@ -22,6 +22,9 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 .entry-content {
 	margin: 0;
 }
+.hentry {
+	margin: 0 auto 100px;
+}
 
 /*-----------------------------------------------
 ## Typography
@@ -45,6 +48,25 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	}
 }
 
+/*-----------------------------------------------
+## Links
+-----------------------------------------------*/
+.pager li > a {
+	border: none;
+}
+.pager li > a:hover,
+.pager li > a:focus {
+	text-decoration: underline;
+}
+
+/*-----------------------------------------------
+## Elements
+-----------------------------------------------*/
+blockquote,
+.mod-blockquote {
+	padding-left: 15px;
+}
+
 /*------------------------------------------------------------------------
 # Navigation
 ------------------------------------------------------------------------*/
@@ -53,28 +75,13 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 ## Main Menu
 -----------------------------------------------*/
 .navbar {
-	background-color: none;
 	border: none;
-	min-height: 0;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0;
 }
 .navbar-default {
 	background: none;
-	margin: 0;
 }
 .navbar-default .navbar-nav > li > a {
 	padding: 10px;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-	background: none;
-}
-#secondary-menu .current_page_item a,
-#tertiary-menu .current_page_item a {
-	background: none;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -88,39 +95,45 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*-----------------------------------------------
 ## Other Menus
 -----------------------------------------------*/
-#secondary-menu,
-#tertiary-menu {
-	background: none;
-}
 #secondary-menu a,
 #tertiary-menu a,
-#menu-social-items a {
+#menu-social-items a,
+#footer-center-menu a {
 	padding: 0 5px;
+}
+#secondary-menu li::after, 
+#tertiary-menu li::after, 
+#footer-center-menu li::after { 
+	content: ""; 
 }
 
 /*------------------------------------------------------------------------
 # Pages
 ------------------------------------------------------------------------*/
 
+/*-----------------------------------------------
+## Search
+-----------------------------------------------*/
+.search .jumbotron {
+	background: none;
+}
+
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
 
-/*------------------------------------------------------------------------
-# Plugins
-------------------------------------------------------------------------*/
-
 /*-----------------------------------------------
-## WooCommerce
+## Widgets
 -----------------------------------------------*/
+.widget,
+#header-widget-area,
+#footer-widget-area {
+	margin: 15px 0;
+}
 
 /*------------------------------------------------------------------------
 # Footer
 ------------------------------------------------------------------------*/
 .site-footer {
 	padding: 20px 0;
-}
-.entry-footer {
-	height: 0;
-	margin: -25px 0 0;
 }

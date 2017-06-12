@@ -70,7 +70,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 			'neutral-color' => '#fcfcfc',
 			'colors' => array(
 				'#5e003d',
-				'#ffed9e',
+				'#94569e',
 				'#7a3d79',
 				'#990059',
 				'#3f1a32',
