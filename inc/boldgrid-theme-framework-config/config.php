@@ -148,7 +148,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Typography Alternate Headings.
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_family'] = 'Vast Shadow';
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_size'] = 20;
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_text_transform'] = 'none';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_text_transform'] = 'uppercase';
 
 	// Typography Navigation.
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_font_family'] = 'Ultra';
@@ -162,6 +162,13 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Typography Tagline Classes.
 	$boldgrid_framework_configs['template']['tagline-classes'] = 'h5 site-description';
+
+	// Typography Relationships.
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.page-template-default .entry-title a'] = array(
+		'type' => 'subheadings',
+		'round' => 'floor',
+		'amount' => 1.8,
+	);
 
 	// Button Classes.
 	$boldgrid_framework_configs['components']['buttons']['variables']['button-primary-classes'] = '.btn, .btn-3d, .btn-rounded';

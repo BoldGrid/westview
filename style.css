@@ -23,7 +23,7 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	margin: 0;
 }
 .hentry {
-	margin: 0 auto 100px;
+	margin: 0 auto 75px;
 }
 .page-template-page_home .hentry {
 	margin: 0 auto;
@@ -49,6 +49,13 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	.navbar-default .navbar-nav .open .dropdown-menu {
 		text-align: left;
 	}
+}
+
+/*-----------------------------------------------
+## Titles
+-----------------------------------------------*/
+.page-template-default .entry-title {
+	margin: -20px 0 25px;
 }
 
 /*-----------------------------------------------
