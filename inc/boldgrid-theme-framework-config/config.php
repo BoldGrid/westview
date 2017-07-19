@@ -185,6 +185,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['menu']['locations']['tertiary'] = 'Header Bottom';
 	$boldgrid_framework_configs['menu']['locations']['social'] = 'Footer Top';
 	$boldgrid_framework_configs['menu']['locations']['footer_center'] = 'Footer Bottom';
+	$boldgrid_framework_configs['menu']['footer_menus'][] = 'social';
 
 	// Widget Areas.
 	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-1']['name'] = 'Above Site Title';
