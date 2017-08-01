@@ -205,9 +205,6 @@ $lighten2: lighten($palette-primary_2, 5%);
 	#boldgrid-sticky-filler {
 		background-color: $palette-primary_5;
 	}
-	.entry-footer a {
-		color: $palette-primary_5;
-	}
 	&.disabled-footer .site-footer {
 		background: $palette-primary-neutral-color;
 		color: $text-contrast-palette-primary-neutral-color;
