@@ -170,6 +170,11 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		'round' => 'floor',
 		'amount' => 1.8,
 	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['h2.h1'] = array(
+		'type' => 'headings',
+		'round' => 'floor',
+		'amount' => 3.2,
+	);
 
 	// Button Classes.
 	$boldgrid_framework_configs['components']['buttons']['variables']['button-primary-classes'] = '.btn, .btn-3d, .btn-color-1, .btn-rounded';
