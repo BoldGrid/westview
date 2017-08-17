@@ -125,7 +125,9 @@
 	&.archive .site-content,
 	&.archive .site-header,
 	&.single .site-content,
-	&.single .site-header {
+	&.single .site-header,
+	&.blog .site-content,
+	&.blog .site-header  {
 		background: $palette-primary-neutral-color;
 		color: $text-contrast-palette-primary-neutral-color;
 	}
