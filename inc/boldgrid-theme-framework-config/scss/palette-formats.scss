@@ -120,6 +120,17 @@
 	}
 
 	/*-----------------------------------------------
+	## Posts
+	-----------------------------------------------*/
+	&.archive .site-content,
+	&.archive .site-header,
+	&.single .site-content,
+	&.single .site-header {
+		background: $palette-primary-neutral-color;
+		color: $text-contrast-palette-primary-neutral-color;
+	}
+
+	/*-----------------------------------------------
 	## Widgets
 	-----------------------------------------------*/
 	.well {
@@ -135,8 +146,8 @@
 		color: $palette-primary_2;
 	}
 	.widget_calendar .table-striped > tbody > tr:nth-of-type(2n+1) {
-    	background-color: $text-contrast-palette-primary_5;
-    	color: $palette-primary_5;
+			background-color: $text-contrast-palette-primary_5;
+			color: $palette-primary_5;
 	}
 	.widget_calendar #today {
 		color: $palette-primary_2;
@@ -159,8 +170,8 @@
 	}
 	mark,
 	.mark {
- 		background: $palette-primary_1;
- 		color: $text-contrast-palette-primary_1;
+		background: $palette-primary_1;
+		color: $text-contrast-palette-primary_1;
 	}
 
 	/*-----------------------------------------------
