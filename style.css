@@ -54,8 +54,11 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*-----------------------------------------------
 ## Titles
 -----------------------------------------------*/
-.page-template-default .entry-title {
-	margin: -20px 0 25px;
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.page-template-default .entry-title {
+		margin: -25px 0 25px;
+	}
 }
 
 /*-----------------------------------------------
