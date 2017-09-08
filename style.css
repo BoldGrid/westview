@@ -22,12 +22,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 .entry-content {
 	margin: 0;
 }
-.hentry {
-	margin: 0 auto 75px;
-}
-.page-template-page_home .hentry {
-	margin: 0 auto;
-} 
 
 /*-----------------------------------------------
 ## Typography
@@ -142,6 +136,9 @@ blockquote,
 #header-widget-area,
 #footer-widget-area {
 	margin: 15px 0;
+}
+.post {
+	margin: 0 auto 50px;
 }
 
 @media only screen and (min-width: 768px) {
